@@ -12,8 +12,7 @@ export class ArchiveComponent implements OnInit{
   archievList:any
   constructor(private notes:NoteService){}
   ngOnInit(): void {
-    this.onSubmit()
-    
+    this.onSubmit() 
   }
   onSubmit(){
     this.notes.getnotes().subscribe((response:any)=>{
@@ -29,8 +28,5 @@ export class ArchiveComponent implements OnInit{
     console.log("ArchiveList is success"+$event);
 
     this.refresharchiveNotes.emit()
-    
-
   }
-
 }
