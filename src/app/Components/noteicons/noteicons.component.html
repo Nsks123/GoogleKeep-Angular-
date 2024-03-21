@@ -36,12 +36,12 @@
             <button mat-menu-item >Make a copy</button>
             <button mat-menu-item >Show checkboxes</button>
         </mat-menu>
-    <div class="col">
         <mat-menu #paletteMenu="matMenu" xPosition="before" class="cl">          
+            <div class="col">
             <div *ngFor='let colors of colorArray' >
                 <button class="colorIcon" [style.background]="colors.code" (click)="selectcolor(colors)"></button>
             </div>
+            </div>
         </mat-menu>
-    </div>
         
     </div>
