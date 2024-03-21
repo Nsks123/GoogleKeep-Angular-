@@ -1,8 +1,8 @@
+<!-- CreateNote -->
 <div class="box" >
     <div *ngIf="display; then box1 else box2"></div>
     <ng-template #box1>
     <div class="box1">
-
         <input type="text" placeholder="Take a note... " (click)="display=!display">
         <div class="first">
             <button class="one">
@@ -19,10 +19,8 @@
                 <span class="material-symbols-outlined">
                     image
                 </span>
-            </button>
-        
+            </button>       
         </div>
-
     </div>
 </ng-template>
 <ng-template #box2>
@@ -35,7 +33,6 @@
                     keep
                     </span>
             </button>  
-
         </div>
         <div class="div2">
 
@@ -53,14 +50,10 @@
                 <span class="material-symbols-outlined">
                     redo
                     </span>
-            </button>
-            
+            </button>           
             <button class="eig" (click)="Notesubmit()">Close</button>
-        </div>
-        
-       
+        </div>       
     </div>
     </form>
 </ng-template>
-
 </div>

@@ -2,8 +2,6 @@
  import { NoteiconsComponent } from '../noteicons/noteicons.component';
  import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { NoteService } from '../../Services/noteservice/note.service';
-
-
 @Component({
   selector: 'app-createnote',
   templateUrl: './createnote.component.html',
