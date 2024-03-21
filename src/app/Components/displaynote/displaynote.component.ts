@@ -9,15 +9,12 @@ import { MatDialog } from '@angular/material/dialog';
   styleUrl: './displaynote.component.scss'
 })
 export class DisplaynoteComponent implements OnInit{
-
   constructor(public dialog:MatDialog ){}
   message:any
-  ngOnInit(): void {
-    
+  ngOnInit(): void {  
   }
   @Input() notesList:any;
   @Output() refreshUpdateNotes=new EventEmitter<string>()
-
   editNoteDialogBox(notes:any){
     const dialogbox=this.dialog.open(UpdatenoteComponent,{
       width:'40%',
@@ -34,7 +31,4 @@ export class DisplaynoteComponent implements OnInit{
     this.message=$event
     this.refreshUpdateNotes.emit(this.message)
   }
-  
-
-
 }
