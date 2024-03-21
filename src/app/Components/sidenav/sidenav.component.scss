@@ -8,9 +8,7 @@
      height: 100vh;
     //box-shadow: 0.063rem 0 1.25rem 0 white;
     margin-top: 2vh;
- 
  }
- 
  .logo-container {
      display: flex;
      align-items: center;
@@ -27,8 +25,7 @@
          font-size: 24px;
          font-weight: 900;
          cursor: pointer;
-         border: none;
-         
+         border: none;    
      }
      .logo:hover{
         background-color:rgb(223, 220, 220);
@@ -53,11 +50,9 @@
          }
      }
  }
- 
  .sidenav-collapsed {
      width: 16.525rem;
  }
- 
  .sidenav-nav {
      list-style: none;
      padding: 0.98rem;
@@ -85,8 +80,7 @@
                  width: 2rem;
                  min-width: 2rem;
                  margin: 0 0.5rem;
-                 text-align: center;
-                
+                 text-align: center;               
              }
              .sidenav-link-text {
                  margin-left: 0.5rem;

@@ -5,7 +5,6 @@ interface SideNavToggle{
   screenwidth:number;
   collapsed:boolean;
 }
-
 @Component({
   selector: 'app-sidenav',
   templateUrl: './sidenav.component.html',
