@@ -10,8 +10,7 @@ export class TrashComponent implements OnInit{
   deleteList:any
   constructor(private notes:NoteService){}
   ngOnInit(): void {
-    this.onSubmit()
-    
+    this.onSubmit() 
   }
   onSubmit(){
     this.notes.getnotes().subscribe((response:any)=>{
@@ -22,5 +21,4 @@ export class TrashComponent implements OnInit{
       console.log(this.deleteList)
     })
   }
-
 }
