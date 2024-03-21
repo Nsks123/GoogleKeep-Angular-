@@ -20,12 +20,9 @@ export class UpdatenoteComponent implements OnInit {
     this.description=data.description,
     this.id=data.notesId
   }
-
-  ngOnInit(): void {
-    
+  ngOnInit(): void {  
   }
-  closeDialog(){
-    
+  closeDialog(){ 
     let reqData={
       title:this.title,
       description:this.description
