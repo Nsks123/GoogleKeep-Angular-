@@ -11,8 +11,7 @@ export class NoteiconsComponent implements OnInit {
   @Input() notesObject:any
   @Output() refreshEventIcons=new EventEmitter<string>();
   constructor(private notes:NoteService){}
-  ngOnInit(): void {
-    
+  ngOnInit(): void { 
   }
   onDelete(){
     let reqData={
@@ -31,8 +30,7 @@ export class NoteiconsComponent implements OnInit {
     console.log(reqData)
     this.notes.archievNotes(reqData).subscribe((response:any)=>{
       console.log(response)
-      this.refreshEventIcons.emit(response);
-      
+      this.refreshEventIcons.emit(response);  
     })
   }
   colorArray:Array<any>=[

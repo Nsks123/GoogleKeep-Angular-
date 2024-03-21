@@ -1,12 +1,10 @@
-
 .box1{
     display: flex;  
     background-color: white;
     border: 0px;
     background-color: transparent;
     align-items: end;
-    border-radius: 1vh;
-   
+    border-radius: 1vh;  
 }
 .one,.two,.three,.four,.five,.one1{
     text-align: center;
@@ -20,7 +18,6 @@
     border: none;
     background-color: transparent;
     color:rgb(103, 103, 103) ;
-
 }
 .one:hover{
     background-color:rgb(228, 219, 219) ;
@@ -46,7 +43,6 @@
     background-color:rgb(228, 219, 219) ;
     border-radius: 3vh;
 }
-
 .colorIcon {
     display: flex;
     flex-direction: row;
