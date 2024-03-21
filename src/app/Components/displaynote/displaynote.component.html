@@ -1,0 +1,14 @@
+<div *ngFor="let notes of notesList" class="card">
+        <mat-card class="notescontainer" [style.background]="notes.colour">
+            <div class="inner">
+                <mat-card-title  role="textbox" class="title" (click)="editNoteDialogBox(notes)" style=" display: block; overflow-wrap: break-word;">{{notes.title}}</mat-card-title>
+                <button class="kee1"><span class="material-symbols-outlined" >keep</span> </button>           
+            </div>
+       <mat-card-content>
+            <div role="textbox" class="text" style="min-height: 35px; display: block; overflow-wrap: break-word;" (click)="editNoteDialogBox(notes)">{{notes.description}}</div>
+        </mat-card-content>
+    <div class="inner2">
+        <app-noteicons [notesObject]="notes" (refreshEventIcons)="receiverRefreshEventIcons($event)"></app-noteicons> 
+    </div>
+  </mat-card> 
+</div>

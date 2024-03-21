@@ -1,0 +1,36 @@
+<div class="box1">
+
+        <div class="box2">
+            <span class="material-icons md-dark">menu</span>
+            <img id="space" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Google_Keep_icon_%282020%29.svg/1200px-Google_Keep_icon_%282020%29.svg.png"/>
+            <h1 id="kee">Keep</h1>
+        </div>
+        <div class="form">
+            <button id="ch"><span class="material-symbols-outlined "> search</span></button> 
+            <input type="text" placeholder="Search">
+           
+        </div>
+    <div class="last">
+        <button id="m"><span class="material-symbols-outlined">
+            refresh
+            </span></button>
+        <button id="n"><span class="material-symbols-outlined">
+            view_agenda
+            </span></button>
+        <button id="o"><span class="material-symbols-outlined">
+            settings
+            </span></button>
+    </div>
+    <div class="last1">
+        <button id="p"><span class="material-symbols-outlined">
+            apps
+            </span></button>
+        <button id="q"><span class="material-symbols-outlined">
+            account_circle
+            </span></button>
+
+    </div>
+</div>
+  <app-sidenav [ngStyle]="{'width': sideNavWidth}"></app-sidenav>
+<!-- <app-getnote></app-getnote> -->
+<router-outlet></router-outlet>

@@ -1,0 +1,5 @@
+<div class="taskbar"> <app-createnote (refreshEventCreate)="receiverRefreshEventCreate($event)"></app-createnote></div>
+<div class="container"><app-displaynote [notesList]="notesArray" (refreshUpdateNotes)="displayNotes($event)"></app-displaynote></div>
+
+<!-- (refreshEventCreate)="receiverRefreshEventCreate($event)"
+(refreshUpdateNotes)="displayNotes($event)" -->

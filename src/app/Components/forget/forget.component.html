@@ -1,0 +1,33 @@
+<div class="box1">
+  <div class="out">
+    <button mat-button>Help</button>
+    <button mat-button>Privacy</button>
+    <button mat-button>Terms</button>
+  </div>
+  <div class="box2">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/2048px-Google_%22G%22_logo.svg.png"/>
+      <form [formGroup]="forgotForm" (ngSubmit)="ForgotSubmit()">
+        <div class="full">
+          <div class="com">
+            <h1>Forgot Password</h1>
+            <h3>Account Recovery</h3>
+          </div>
+          <div class="out1">
+            <mat-form-field appearance="outline">
+              <mat-label>Email Address</mat-label>
+              <input matInput placeholder="Email" formControlName="email">   
+              <mat-error *ngIf="forgotForm.hasError('required','email')">
+                email is Required!
+            </mat-error>
+            <mat-error *ngIf="forgotForm.hasError('email','email')">
+                email is not valid!
+            </mat-error>        
+            </mat-form-field>
+            <div class="but">
+              <button mat-raised-button color="primary" id="des" >Submit</button>
+            </div>
+          </div>
+        </div>
+      </form>     
+  </div>
+</div>
