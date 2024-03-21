@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../../Services/datashare/data.service';
-
 @Component({
   selector: 'app-toolbar',
   templateUrl: './toolbar.component.html',
@@ -8,7 +7,6 @@ import { DataService } from '../../Services/datashare/data.service';
 })
 export class ToolbarComponent implements OnInit {
   sideNavWidth:any;
-
   constructor(private sideNavService: DataService) {}
   ngOnInit() {
     this.sideNavService.isSideNavOpen$.subscribe(isOpen => {

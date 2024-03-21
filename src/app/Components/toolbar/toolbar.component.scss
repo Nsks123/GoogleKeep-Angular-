@@ -1,5 +1,3 @@
-
-
 img{
     display: flex;
     align-items: flex-start;
@@ -8,7 +6,6 @@ img{
     width: 3vw;  
     color: whitesmoke;
 }
-
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
@@ -16,8 +13,6 @@ img{
   'GRAD' 0,
   'opsz' 24
 }
-
-
 .material-icons.md-dark { 
     color: rgba(0, 0, 0, 0.54); 
 }
@@ -30,10 +25,7 @@ img{
 .box2{
     display: flex;
     align-items: center;
-    padding-left: 2vh;
-   
-   
-    
+    padding-left: 2vh;   
 }
 img{
     display: flex;
@@ -42,9 +34,7 @@ img{
     padding-bottom: 7vh;
     position: relative;
     padding-left: 4vh;
-    margin-top: 7vh;
-   
-    
+    margin-top: 7vh;    
 }
 #kee{
     display: flex;
@@ -54,7 +44,6 @@ img{
     padding: 3vh;
     color: grey;
 }
-
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
@@ -77,8 +66,7 @@ img{
     height: 7vh;
     width: 50vw;
     margin-top: 2vh;
-    border-radius: 4vh;
-    
+    border-radius: 4vh;   
 }
 .form input{
     flex:1;
@@ -88,7 +76,6 @@ img{
    border: 0vh;
    outline: none;
    font-size: large;
-
 }
 .material-icons{
     cursor: pointer;
@@ -105,8 +92,7 @@ img{
     align-items: center;
     cursor: pointer;
 }
-.last{
-    
+.last{   
     border: 0vh;
     height:4vh;
     width: 10vw;
@@ -114,19 +100,16 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 25vh;
-    
+    margin-left: 25vh;   
 }
-.last1{
-   
+.last1{   
     border: 0vh;
     height:4vh;
     width: 10vw;
     margin-top: 4vh;
     display: flex;
     justify-content: center;
-    align-items: center;
-   
+    align-items: center;   
 }
 .last button{
     height: 3vw;
@@ -134,8 +117,7 @@ img{
     border-radius: 50%;
     border: 0vh;
     background-color: transparent;
-    cursor: pointer;
-    
+    cursor: pointer;    
 }
 .last1 button{
     height: 3vw;
@@ -144,35 +126,24 @@ img{
     border: 0vh;
     background-color: transparent;
     cursor: pointer;
-
 }
 #m,#n,#o{
     color: rgb(117, 114, 114);
 }
 #m:hover{
     background-color: rgb(219, 218, 218);
-
 }
 #n:hover{
     background-color: rgb(219, 218, 218);
-    
-
-
 }
 #o:hover{
     background-color: rgb(219, 218, 218);
-
-
 }
 #p:hover{
     background-color: rgb(219, 218, 218);
-
-
 }
 #q:hover{
     background-color: rgb(219, 218, 218);
-
-
 }
 #ch:hover{
     background-color: rgb(219, 218, 218);
@@ -180,8 +151,6 @@ img{
 #p,#q{
     color: rgb(117, 114, 114);
 }
-
-
 .notes{
     display: flex;
     padding-left: 20vh;
