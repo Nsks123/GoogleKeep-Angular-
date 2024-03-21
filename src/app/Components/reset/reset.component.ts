@@ -13,13 +13,11 @@ export class ResetComponent implements OnInit{
   resetForm!:FormGroup;
   submitted=false;
   token:any;
-  
   constructor(private formBuilder:FormBuilder,private user:UserService,private activeRoute:ActivatedRoute){}
   ngOnInit(): void {
     this.resetForm=this.formBuilder.group({
       password: ['',[Validators.required,Validators.pattern('(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}')]],
       password1: ['',[Validators.required,Validators.pattern('(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}')]],
-    
     })
     this.token=this.activeRoute.snapshot.paramMap.get('token');
     //console.log(this.token);
@@ -36,6 +34,5 @@ export class ResetComponent implements OnInit{
         console.log(response);
       });
     }
-  }
-  
+  } 
 }
