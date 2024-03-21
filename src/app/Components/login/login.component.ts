@@ -21,6 +21,7 @@ export class LoginComponent implements OnInit{
       Password: ['',[Validators.required,Validators.pattern('(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}')]]  
     })
   }
+  
   LoginSubmit(){
     this.submitted=true;
     if(this.loginForm.valid){
